@@ -12,7 +12,13 @@ const NewTodoForm = () => {
   return (
     <div>
       <form action={newTodo}>
-        <input type="text" name="content" placeholder="Add new todo" />
+        <input
+          type="text"
+          required
+          name="content"
+          placeholder="Add new todo"
+          className="border border-black/25 text-gray-600"
+        />
         <button type="submit">Add</button>
       </form>
     </div>

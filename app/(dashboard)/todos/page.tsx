@@ -8,7 +8,6 @@ const getTodos = async () => {
 
 export default async function Page() {
   const todos = await getTodos() // get all todos
-  console.log(todos)
   return (
     <>
       <div>My todos</div>
